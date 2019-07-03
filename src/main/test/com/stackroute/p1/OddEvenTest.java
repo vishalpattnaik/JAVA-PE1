@@ -47,4 +47,14 @@ public class OddEvenTest {
         assertEquals("Tom", result);
 
     }
+
+    @Test
+    public void checkCharacter() {
+
+        String result = ob.checkOddEven('a');
+        assertEquals("Please enter a number", result);
+
+    }
+
+
 }

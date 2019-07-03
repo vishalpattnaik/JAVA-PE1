@@ -47,6 +47,14 @@ public class PalindromeTest {
         String result = ob.checkPalindrome(2432);
         assertEquals("2432 is not palindrome.", result);
 
+    }
+
+    @Test
+    public void checkNegativeNumber() {
+
+        String res = ob.checkPalindrome(-432453264);
+        assertEquals("Invalid input", res);
 
     }
+
 }

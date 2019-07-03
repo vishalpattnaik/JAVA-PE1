@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CheckCharacter {
 
     public static void main(String[] args) {
-        // write your code here
+        //take input from user
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a character: ");
@@ -13,6 +13,7 @@ public class CheckCharacter {
         System.out.println(checkCharacter(ch));
     }
 
+    //check whether captial letter or small letter or digit or special symbol
     public static String checkCharacter(char ch) {
         if(ch>='A' && ch<='Z') {
             return("Capital Letter");

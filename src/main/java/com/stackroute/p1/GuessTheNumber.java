@@ -1,3 +1,10 @@
+/*Accept a number from user as input (set the limit say 1 - 50 or 1 -
+100) User should guess until the the target number is guessed correctly.
+Print separate messages for the following:
+a. Number guessed is more than original number
+b. Number guessed is less than original number
+c. Number guessed matches the original number*/
+
 package com.stackroute.p1;
 
 import java.util.Random;
@@ -6,9 +13,8 @@ import java.util.Scanner;
 public class GuessTheNumber {
 
     public static void main(String[] args) {
-        // write your code here
 
-
+        //generate random number
         Random rand = new Random();
         int randomNumber = rand.nextInt(100) + 1;
 
@@ -18,6 +24,8 @@ public class GuessTheNumber {
 
     public static String guessTheNumber(int randomNumber) {
 
+
+        //guess a number and check if it matches the random number
         Scanner sc = new Scanner(System.in);
 
         int yourGuess;

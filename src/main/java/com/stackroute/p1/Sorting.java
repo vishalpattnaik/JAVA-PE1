@@ -1,8 +1,13 @@
+/*accept a number as input from user and perform the following:
+a. sort the number in non-increasing order
+b. after sorting sum all the even numbers, the sum should be greater than 15 .
+c. if sum is more than 15,then print output as true or false.*/
+
 package com.stackroute.p1;
 
 public class Sorting
 {
-
+    //sort
     public static String numberSort(int num)
     {
         String output="";

@@ -1,3 +1,6 @@
+/*check whether the given number is palindrome or not If it is a palindrome*/
+/*Add all the even numbers and check whether the sum is more than 25.*/
+
 package com.stackroute.p1;
 
 import java.util.Scanner;
@@ -5,7 +8,6 @@ import java.util.Scanner;
 class Palindrome {
 
     public static void main(String[] args) {
-        // write your code here
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
@@ -15,8 +17,12 @@ class Palindrome {
 
     }
 
+    //function to check palindrome
     public static String checkPalindrome(long n) {
 
+
+        if(n<0)
+            return "Invalid input";
 
         long num=n;
         long r=0;
@@ -27,7 +33,7 @@ class Palindrome {
             n=n/10;
 
         }
-
+        //if palindrome, check sum is greater than 25
         if(num==r) {
             long d, sum=0;
             while(num>0) {
